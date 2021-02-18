@@ -10,7 +10,7 @@ def solution(phone_book):
 
     return True
 
-# 다른 사람의 풀이
+# 다른 사람의 풀이 1
 def solution1(phone_book):
     hash_map = {}
     for phone_number in phone_book:
@@ -26,6 +26,7 @@ def solution1(phone_book):
 
     return True
 
+# 다른 사람의 풀이 2
 def solution2(phone_book):
     phone_book = sorted(phone_book)
     for p1, p2 in zip(phone_book, phone_book[1:]):
