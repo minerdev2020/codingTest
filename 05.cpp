@@ -12,7 +12,7 @@ int solution(vector<int> citations) {
             answer = i;
             break;
         }
-        if(i == i < citations.size() - 1)
+        if(i == citations.size() - 1)
             answer = citations.size();
     }
     return answer;
