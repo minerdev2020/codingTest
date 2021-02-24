@@ -1,6 +1,6 @@
 unvisited = []
 
-def dfs(current : list, computers : list):
+def dfs(current : int, computers : list):
     global unvisited
     unvisited.remove(current)
 

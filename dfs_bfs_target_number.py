@@ -1,4 +1,4 @@
-def dfs(current : list, numbers : list, result : list, target : int):
+def dfs(current : int, numbers : list, result : list, target : int):
     if not numbers:
         if current == target:
             result.append(current)
