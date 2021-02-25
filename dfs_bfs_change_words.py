@@ -18,7 +18,6 @@ def one_letter_diff(word1, word2):
 # 제출한 풀이
 def dfs(current : str, words : list, target : str, route : list):
     if current == target:
-        global answer_list
         answer.append(route)
         return
     

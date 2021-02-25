@@ -1,7 +1,6 @@
 unvisited = []
 
 def dfs(current : int, computers : list):
-    global unvisited
     unvisited.remove(current)
 
     print(current, unvisited)
