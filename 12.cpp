@@ -16,13 +16,14 @@ long long solution(int n, vector<int> times) {
         long long pass = 0;
         for(int i = 0; i < times.size(); i++)
             pass += mid / (long long)times[i];
-        if(pass == n){
-            answer = mid;
-        }
-        else if(pass > n)
-            right = mid - 1;
-        else 
+        if(pass <= n){
             left = mid + 1;
+            if(answer <= mid)
+                answer = mid;
+        }
+        else
+            right = mid - 1;
+
     }
     return answer;
 }
