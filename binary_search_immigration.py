@@ -1,23 +1,24 @@
+def compare(n, times, min_time):
+    count = 0
+    for t in times:
+        count += min_time // t
+        
+    print(count)
+    return count < n
+
 def solution(n, times):
     times.sort()   
     left = times[0]
     right = times[0] * n
-    answer = right
     while(left + 1 < right):
         mid = (left + right) // 2
-        
-        count = 0
-        for time in times:
-            count += mid // time
-        print(left, mid, right, count)
-        if n > count:
+        result = compare(n, times, mid)
+        print(left, mid, right, result)
+        if result:
             left = mid
-            
         else:
             right = mid
-            if answer > mid:
-                answer = mid
             
-    return answer
+    return right
 
 print(solution(6, [7, 10]))
