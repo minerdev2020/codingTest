@@ -31,6 +31,5 @@ int solution(int N, int number) {
         }
     }
     
-    
     return answer==0?-1:answer;
 }
