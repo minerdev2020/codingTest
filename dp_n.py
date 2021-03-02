@@ -1,3 +1,4 @@
+# 다른 사람의 풀이
 def solution(N, number):
     if N == number: 
         return 1
