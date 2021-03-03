@@ -4,6 +4,7 @@
 using namespace std;
 
 int solution(vector<int> money) {
+	
 	vector <long> one;
 	vector <long> two;
 	int msize = money.size();
