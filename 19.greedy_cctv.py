@@ -24,7 +24,7 @@ def solution(routes):
     answer.append(common)                
     return len(answer)
 
-# 다른 사람의 풀이1
+# 다른 사람의 풀이 1
 def solution(routes):
     routes = sorted(routes, key=lambda x: x[1])
     last_camera = -30000
@@ -38,7 +38,7 @@ def solution(routes):
 
     return answer
 
-# 다른 사람의 풀이2
+# 다른 사람의 풀이 2
 import heapq
 
 def solution(routes):
