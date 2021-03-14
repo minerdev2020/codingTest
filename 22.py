@@ -16,8 +16,6 @@ def solution(info, query):
     for k in data:
         data[k].sort()
 
-        # print(k, data[k])
-
     answer = list()
     for q in query:
         q = q.split()
