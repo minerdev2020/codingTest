@@ -1,5 +1,5 @@
 def solution(total):
-    dp = [0 for i in range(total + 1)]
+    dp = [0 for _ in range(total + 1)]
     for i in range(1, total + 1):
         min_sugar = 9999
         for j in range(1, i + 1):
