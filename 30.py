@@ -23,6 +23,5 @@ def solution(n, m, height):
 height = []
 n, m = map(int, input().split())
 height = list(map(int, input().split()))
-
 result = solution(n, m, height)
 print(result)
