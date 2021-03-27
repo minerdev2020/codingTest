@@ -1,3 +1,5 @@
+import copy
+
 def solution(s):
     answer = []
     if len(s) < 5:
