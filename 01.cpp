@@ -23,3 +23,14 @@ bool solution(vector<string> phone_book) {
     }
     return true;
 }
+
+#python
+def solution(phone_book):
+    for phone in phone_book:
+        for other_phone in phone_book:
+            if len(phone) >= len(other_phone):
+                continue
+
+            if hash(phone) == hash(other_phone[:len(phone)]):
+                return False
+    return True
