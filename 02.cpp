@@ -19,3 +19,16 @@ int solution(vector<vector<string>> clothes) {
     }
     return answer - 1;
 }
+
+/*python
+def solution(clothes):
+    answer = 1
+    hash_map = dict()
+    for cloth in clothes:
+        if cloth[1] not in hash_map.keys():
+            hash_map[cloth[1]] = 1
+        else:
+            hash_map[cloth[1]] += 1
+    for clo in hash_map.values():
+        answer *= (clo + 1)
+    return answer - 1
