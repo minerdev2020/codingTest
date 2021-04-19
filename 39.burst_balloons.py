@@ -1,4 +1,5 @@
 # 다른 사람의 답안 참고함
+# 마지막에 빼는 숫자를 기준삼는다
 class Solution:
     def maxCoins(self, nums: list) -> int:
         nums.insert(0, 1)
@@ -10,7 +11,9 @@ class Solution:
             for left in range(n - l):
                 right = left + l
                 for k in range(left + 1, right):
-                    dp[left][right] = max(dp[left][right], nums[left] * nums[k] * nums[right] + dp[left][k] + dp[k][right])
+                    dp[left][right] = max(dp[left][right], 
+                                          nums[left] * nums[k] * nums[right] + 
+                                            dp[left][k] + dp[k][right])
         
         return dp[0][n - 1]
     
